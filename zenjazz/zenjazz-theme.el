@@ -1,15 +1,20 @@
 ;;; zenjazz-theme.el --- A low contrast color theme for Emacs.
 
 ;; Copyright (C) 2011-2014 Bozhidar Batsov
+;; Copyright (C) 2012-2014 Roman Parykin
 ;; Copyright (C) 2015 Ben McGinnes
 
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: https://github.com/bbatsov/zenjazz-emacs
 ;; Version: 2.3-cvs
 
-;; Fork Author: Ben McGinnes <ben@adversary.org>
+;; Author: Roman Parykin <donderom@ymail.com>
+;; URL: https://github.com/donderom/jazz-theme
+;; Version: 1.0
+
+;; Author: Ben McGinnes <ben@adversary.org>
 ;; URL: https://github.com/adversary-org/emacs-themes/zenjazz/
-;; Version: 2.3-bdm
+;; Version: 1.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -29,10 +34,18 @@
 ;; A port of the popular Vim theme Zenjazz for Emacs 24, built on top
 ;; of the new built-in theme support in Emacs 24.
 
+;;   Drop the theme in a folder that is on `custom-theme-load-path'
+;; and enjoy and add the load command to the end of ~/.emacs:
+;;   (load-theme 'zenjazz t)
+
+;; Loading themes at the end of the init file allows for exceptions
+;; and customisation set permanently through other parts of the init
+;; file if that is preferred.
+
 ;;; Credits:
 
-;; Jani Nurminen created the original theme for vim on such this port
-;; is based.
+;; Jani Nurminen created the original theme for vim which formed the
+;; basis of Zenburn for Emacs.
 
 ;;; Code:
 
@@ -161,7 +174,7 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:foreground ,zenjazz-green-1
                       :background ,zenjazz-bg-05
                       :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:background ,zenjazz-bg-1))
+   `(region ((,class (:background ,zenjazz-red))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,zenjazz-bg+2))))
    `(trailing-whitespace ((t (:background ,zenjazz-red))))

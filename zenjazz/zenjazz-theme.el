@@ -126,7 +126,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(link ((t (:foreground ,zenjazz-yellow :underline t :weight bold))))
    `(link-visited ((t (:foreground ,zenjazz-yellow-2 :underline t :weight normal))))
    `(default ((t (:foreground ,zenjazz-fg :background ,zenjazz-bg))))
-   `(cursor ((t (:foreground ,zenjazz-blue-3 :background ,zenjazz-fg+1))))
+   ;`(cursor ((t (:foreground ,zenjazz-blue-3 :background ,zenjazz-fg+1))))
    `(escape-glyph ((t (:foreground ,zenjazz-yellow :bold t))))
    `(fringe ((t (:foreground ,zenjazz-fg :background ,zenjazz-bg+1))))
    `(header-line ((t (:foreground ,zenjazz-yellow
@@ -175,8 +175,10 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:foreground ,zenjazz-green-1
                       :background ,zenjazz-bg-05
                       :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:background ,zenjazz-yellow-2))
-             (t :inverse-video t)))
+;   `(region ((,class (:background ,zenjazz-yellow-2))
+;             (t :inverse-video t)))
+   `(region ((,class (:background ,"#1E90FF"
+                                  :foreground , "white"))))
    `(secondary-selection ((t (:background ,zenjazz-bg+2))))
    `(trailing-whitespace ((t (:background ,zenjazz-red))))
    `(vertical-border ((t (:foreground ,zenjazz-fg))))

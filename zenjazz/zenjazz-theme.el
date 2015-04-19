@@ -5,7 +5,7 @@
 ;; Copyright (C) 2015 Ben McGinnes
 
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
-;; URL: https://github.com/bbatsov/zenjazz-emacs
+;; URL: https://github.com/bbatsov/zenburn-emacs
 ;; Version: 2.3-cvs
 
 ;; Author: Roman Parykin <donderom@ymail.com>

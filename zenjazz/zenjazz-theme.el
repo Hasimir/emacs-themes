@@ -40,7 +40,8 @@
 
 ;; Loading themes at the end of the init file allows for exceptions
 ;; and customisation set permanently through other parts of the init
-;; file if that is preferred.
+;; file if that is preferred.  Errors ought to be prevented by
+;; commenting out the equivalent value in this file if it is listed.
 
 ;;; Credits:
 
@@ -71,7 +72,7 @@
     ("zenjazz-red"      . "#953331")
     ("zenjazz-red-1"    . "#953331")
     ("zenjazz-red-2"    . "#953331")
-    ("zenjazz-red-3"    . "#953331")
+    ("zenjazz-red-3"    . "#DFA700")
     ("zenjazz-red-4"    . "#953331")
     
     ("zenjazz-orange"   . "#ba5b34")
@@ -94,7 +95,7 @@
     ("zenjazz-blue"     . "#385e6b")
     ("zenjazz-blue-1"   . "#385e6b")
     ("zenjazz-blue-2"   . "#385e6b")
-    ("zenjazz-blue-3"   . "#385e6b")
+    ("zenjazz-blue-3"   . "#1E90FF")
     ("zenjazz-blue-4"   . "#385e6b")
     ("zenjazz-blue-5"   . "#385e6b")
     
@@ -125,7 +126,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(link ((t (:foreground ,zenjazz-yellow :underline t :weight bold))))
    `(link-visited ((t (:foreground ,zenjazz-yellow-2 :underline t :weight normal))))
    `(default ((t (:foreground ,zenjazz-fg :background ,zenjazz-bg))))
-   `(cursor ((t (:foreground ,zenjazz-fg :background ,zenjazz-fg+1))))
+   `(cursor ((t (:foreground ,zenjazz-blue-3 :background ,zenjazz-fg+1))))
    `(escape-glyph ((t (:foreground ,zenjazz-yellow :bold t))))
    `(fringe ((t (:foreground ,zenjazz-fg :background ,zenjazz-bg+1))))
    `(header-line ((t (:foreground ,zenjazz-yellow
@@ -174,7 +175,7 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:foreground ,zenjazz-green-1
                       :background ,zenjazz-bg-05
                       :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:background ,zenjazz-red))
+   `(region ((,class (:background ,zenjazz-yellow-2))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,zenjazz-bg+2))))
    `(trailing-whitespace ((t (:background ,zenjazz-red))))
@@ -191,7 +192,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-lock-preprocessor-face ((t (:foreground ,zenjazz-blue+1))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,zenjazz-yellow :weight bold))))
    `(font-lock-regexp-grouping-backslash ((t (:foreground ,zenjazz-green :weight bold))))
-   `(font-lock-string-face ((t (:foreground ,zenjazz-red))))
+   ;`(font-lock-string-face ((t (:foreground ,zenjazz-red))))
    `(font-lock-type-face ((t (:foreground ,zenjazz-blue-1))))
    `(font-lock-variable-name-face ((t (:foreground ,zenjazz-orange))))
    `(font-lock-warning-face ((t (:foreground ,zenjazz-yellow-2 :weight bold))))
